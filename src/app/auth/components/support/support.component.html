@@ -1,0 +1,26 @@
+<section class="support">
+  <div class="support-hero">
+<form [formGroup]="myForm" novalidate (ngSubmit)="submit()">
+  <div class="mail">
+    <label>Email</label><br>
+    <input placeholder="E-mail" name="email" formControlName="userEmail" />
+
+    @if(myForm.controls["userEmail"].invalid && myForm.controls["userEmail"].touched){
+    <div class="alert">Некорректный email</div>
+    }
+  </div>
+  <div class="description">
+    <label>Описание</label><br>
+    <input placeholder="Описание проблемы" name="description" formControlName="description" />
+
+    @if(myForm.controls["description"].invalid && myForm.controls["description"].touched){
+    <div class="alert">Не указано описание</div>
+    }
+  </div>
+  <div class="btn">
+  <button >Отмена</button>
+  <button [disabled]="myForm.invalid">Отправить</button>
+  </div>
+</form>
+</div>
+</section>

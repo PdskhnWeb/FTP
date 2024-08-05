@@ -1,0 +1,21 @@
+.header-hero{
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  background: #6DADFF;
+
+  p{
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 70px;
+  }
+
+  button{
+    margin-right: 50px;
+    border: 0;
+    background: #6DADFF;
+    cursor: pointer;
+  }
+}

@@ -40,3 +40,27 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
+
+# Ignore all files with a .log extension
+*.log
+
+# Ignore all files in the build/ and temp/ directories
+build/
+temp/
+
+# Ignore a specific file
+secret_config.yml
+
+# Ignore all .DS_Store files (common on macOS)
+.DS_Store
+
+# Ignore node_modules directory (common in Node.js projects)
+node_modules/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
+
+# Ignore environment variable files
+.env
+
